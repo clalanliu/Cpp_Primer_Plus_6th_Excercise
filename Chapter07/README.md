@@ -25,6 +25,7 @@ int main(){
 ## 7.2
 **題：** 
 Write a program that asks the user to enter up to 10 golf scores, which are to be stored in an array. You should provide a means for the user to terminate input prior to entering 10 scores. The program should display all the scores on one line and report the average score. Handle input, display, and the average calculation with three separate array-processing functions.
+
 **解：** 
 ```Cpp
 #include <iostream>
@@ -93,6 +94,7 @@ Here is a structure declaration:
     b.  Write a function that passes the address of a box structure and that
         sets the volume member to the product of the other three dimensions.
     c.  Write a simple program that uses these two functions.
+
 **解：** 
 ```Cpp
 #include <iostream>
@@ -127,6 +129,7 @@ int main(){
 ## 7.4
 **題：** 
 Many state lotteries use a variation of the simple lottery portrayed by Listing 7.4. In these variations you choose several numbers from one set and  call them the field numbers. For example, you might select five numbers from the field of 1–47). You also pick a single number (called a mega number or a power ball, etc.) from a second range, such as 1–27. To win the grand prize, you have to guess all the picks correctly. The chance of winning is the product of the probability of picking all the field numbers times the probability of picking the mega number. For instance, the probability of winning the example described here is the product of the probability of picking 5 out of 47 correctly times the probability of picking 1 out of 27 correctly. Modify Listing 7.4 to calculate the probability of winning this kind of lottery.
+
 **解：** 
 ```Cpp
 #include <iostream>
@@ -166,6 +169,7 @@ long double probability(unsigned numbers, unsigned picks)
 ## 7.5
 **題：** 
 Define a recursive function that takes an integer argument and returns the factorial of that argument. Recall that 3 factorial, written 3!, equals 3 × 2!, and so on, with 0! defined as 1. In general, if n is greater than zero, n! = n * (n - 1)!. Test your function in a program that uses a loop to allow the user to enter various values for which the program reports the factorial.
+
 **解：** 
 ```Cpp
 #include <iostream>
@@ -253,6 +257,7 @@ void Show_array(const double *ar, int n)
 ## 7.7
 **題：** 
 Redo Listing 7.7, modifying the three array-handling functions to each use two pointer parameters to represent a range.The fill_array() function, instead of returning the actual number of items read, should return a pointer to the location after the last location filled; the other functions can use this pointer as the second argument to identify the end of the data.
+
 **解：** 
 ```Cpp
 #include <iostream>
