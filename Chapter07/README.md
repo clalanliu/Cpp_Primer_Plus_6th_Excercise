@@ -89,11 +89,11 @@ Here is a structure declaration:
         float volume;
     };
 
-    a.  Write a function that passes a box structure by value and that displays
-        the value of each member.
-    b.  Write a function that passes the address of a box structure and that
-        sets the volume member to the product of the other three dimensions.
-    c.  Write a simple program that uses these two functions.
+a.  Write a function that passes a box structure by value and that displays the value of each member.
+
+b.  Write a function that passes the address of a box structure and that sets the volume member to the product of the other three dimensions.
+
+c.  Write a simple program that uses these two functions.
 
 **解：** 
 ```Cpp
