@@ -59,18 +59,6 @@ golf structures.
 **解：**
 
 ```Cpp
-
-
-```
-
-## 9.2
-
-**題：** 
-Redo Listing 9.9, replacing the character array with a string object. The program should no longer have to check whether the input string fits, and it can compare the input string to "" to check for an empty line.
-
-**解：**
-
-```Cpp
 //  golf.cpp --for sol-9-01.cpp
 
 #include "golf.h"
@@ -148,6 +136,44 @@ int main()
     return 0;
 }
 ```
+
+## 9.2
+
+**題：** 
+Redo Listing 9.9, replacing the character array with a string object. The program should no longer have to check whether the input string fits, and it can compare the input string to "" to check for an empty line.
+
+**解：**
+```Cpp
+#include <iostream>
+#include <string>
+
+void strcount(const std::string);
+int main(void)
+{
+    using namespace std;
+    string input;
+    cout << "Enter a line: \n";
+    while(getline(cin, input) && input != "")
+    {
+        strcount(input);
+        cout << "Enter next line (empty line to quit):\n";
+    }
+    cout << "Bye\n";
+    return 0;
+}
+void strcount(const std::string str)
+{
+    using namespace std;
+    static int total = 0;
+    int count = str.length();
+    cout << "\"" << str << "\" contains ";
+    total += count;
+    cout << count << " characters\n";
+    cout << total << " characters total\n";
+}
+```
+
+
 ## 9.3
 
 **題：** 
