@@ -1,1 +1,2 @@
-# Cpp_Primer_Plus_6th_Excercise
+# Cpp Primer Plus 6th Excercise
+Solutions of the exercises in the book C++ Primer Plus.
